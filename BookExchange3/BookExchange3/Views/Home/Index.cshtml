@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h2>
+        A GREAT BOOK BEGINS WITH AN IDEA;
+        <br />
+        A GREAT LIFE, WITH A DETERMINATION.
+    </h2>
+    
+    <p class="lead">By donating books you give other people the opportunity to discover for themselves that ONE book that could change their life.</p>
+    <p><a class="btn btn-primary btn-lg" url=@Html.ActionLink("Donate", "Donate", "Books")</a></p>
+    @*Donate &raquo*@
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Get a FREE book</h2>
+        <p>
+            Whenever you read a good book, somewhere in the world a door opens to allow in more light.
+
+            –Vera Nazarian
+        </p>
+        <p><a class="btn btn-default" url=@Html.ActionLink("Get a book","ListOfBooks","Books")</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Request a Book</h2>
+        <p>We will inform you whenever we will have that book for You</p>
+        <p><a class="btn btn-default" url=@Html.ActionLink("Request","Create","Requests")</a></p>
+    </div> 
+    <div class="col-md-4">
+        <h2>Tri-C</h2>
+        <p>Where Future Begins! </p>
+        <p><a class="btn btn-default" href="http://www.tri-c.edu/">Learn more &raquo;</a></p>
+    </div>
+</div>
